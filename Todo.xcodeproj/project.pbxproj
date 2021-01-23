@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D202D9225A38A9800D1D97F /* CaveatBrush-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D202D9125A38A9800D1D97F /* CaveatBrush-Regular.ttf */; };
+		4D202D9325A38A9800D1D97F /* CaveatBrush-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D202D9125A38A9800D1D97F /* CaveatBrush-Regular.ttf */; };
 		4DF503E525A321130094BE7A /* Todo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4DF503CF25A321100094BE7A /* Todo.xcdatamodeld */; };
-		4DF503E625A321130094BE7A /* Todo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4DF503CF25A321100094BE7A /* Todo.xcdatamodeld */; };
 		4DF503E725A321130094BE7A /* TodoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF503D125A321100094BE7A /* TodoApp.swift */; };
 		4DF503E825A321130094BE7A /* TodoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF503D125A321100094BE7A /* TodoApp.swift */; };
 		4DF503E925A321130094BE7A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF503D225A321100094BE7A /* ContentView.swift */; };
@@ -17,9 +18,14 @@
 		4DF503EC25A321130094BE7A /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF503D325A321100094BE7A /* Persistence.swift */; };
 		4DF503ED25A321130094BE7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DF503D425A321130094BE7A /* Assets.xcassets */; };
 		4DF503EE25A321130094BE7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DF503D425A321130094BE7A /* Assets.xcassets */; };
+		4DF503FB25A3214D0094BE7A /* AddTodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF503FA25A3214D0094BE7A /* AddTodoView.swift */; };
+		4DF503FC25A3214D0094BE7A /* AddTodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF503FA25A3214D0094BE7A /* AddTodoView.swift */; };
+		4DF5040325A328AD0094BE7A /* Todo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4DF503CF25A321100094BE7A /* Todo.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4D202D9125A38A9800D1D97F /* CaveatBrush-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CaveatBrush-Regular.ttf"; sourceTree = "<group>"; };
+		4D61A87925BBE86E00A238FC /* Todo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Todo.entitlements; sourceTree = "<group>"; };
 		4DF503D025A321100094BE7A /* Shared.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Shared.xcdatamodel; sourceTree = "<group>"; };
 		4DF503D125A321100094BE7A /* TodoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoApp.swift; sourceTree = "<group>"; };
 		4DF503D225A321100094BE7A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -30,6 +36,7 @@
 		4DF503E125A321130094BE7A /* Todo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Todo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DF503E325A321130094BE7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4DF503E425A321130094BE7A /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		4DF503FA25A3214D0094BE7A /* AddTodoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTodoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,9 +57,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4D202D9625A38BEA00D1D97F /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				4D202D9125A38A9800D1D97F /* CaveatBrush-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		4DF503C925A321100094BE7A = {
 			isa = PBXGroup;
 			children = (
+				4D61A87925BBE86E00A238FC /* Todo.entitlements */,
 				4DF503CE25A321100094BE7A /* Shared */,
 				4DF503DB25A321130094BE7A /* iOS */,
 				4DF503E225A321130094BE7A /* macOS */,
@@ -63,8 +79,9 @@
 		4DF503CE25A321100094BE7A /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				4D202D9625A38BEA00D1D97F /* Fonts */,
 				4DF503D125A321100094BE7A /* TodoApp.swift */,
-				4DF503D225A321100094BE7A /* ContentView.swift */,
+				4DF503F925A3213C0094BE7A /* View */,
 				4DF503D325A321100094BE7A /* Persistence.swift */,
 				4DF503D425A321130094BE7A /* Assets.xcassets */,
 				4DF503CF25A321100094BE7A /* Todo.xcdatamodeld */,
@@ -96,6 +113,15 @@
 				4DF503E425A321130094BE7A /* macOS.entitlements */,
 			);
 			path = macOS;
+			sourceTree = "<group>";
+		};
+		4DF503F925A3213C0094BE7A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4DF503FA25A3214D0094BE7A /* AddTodoView.swift */,
+				4DF503D225A321100094BE7A /* ContentView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,6 +202,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D202D9225A38A9800D1D97F /* CaveatBrush-Regular.ttf in Resources */,
 				4DF503ED25A321130094BE7A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -184,6 +211,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D202D9325A38A9800D1D97F /* CaveatBrush-Regular.ttf in Resources */,
 				4DF503EE25A321130094BE7A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -199,6 +227,7 @@
 				4DF503EB25A321130094BE7A /* Persistence.swift in Sources */,
 				4DF503E725A321130094BE7A /* TodoApp.swift in Sources */,
 				4DF503E925A321130094BE7A /* ContentView.swift in Sources */,
+				4DF503FB25A3214D0094BE7A /* AddTodoView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,10 +235,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4DF503E625A321130094BE7A /* Todo.xcdatamodeld in Sources */,
 				4DF503EC25A321130094BE7A /* Persistence.swift in Sources */,
+				4DF5040325A328AD0094BE7A /* Todo.xcdatamodeld in Sources */,
 				4DF503E825A321130094BE7A /* TodoApp.swift in Sources */,
 				4DF503EA25A321130094BE7A /* ContentView.swift in Sources */,
+				4DF503FC25A3214D0094BE7A /* AddTodoView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +297,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -320,6 +352,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -332,6 +366,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Todo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3YQZ2TJCPG;
 				ENABLE_PREVIEWS = YES;
@@ -344,8 +379,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.piyushh.Todo;
 				PRODUCT_NAME = Todo;
 				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -354,6 +390,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Todo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3YQZ2TJCPG;
 				ENABLE_PREVIEWS = YES;
@@ -366,8 +403,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.piyushh.Todo;
 				PRODUCT_NAME = Todo;
 				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
